@@ -1,0 +1,25 @@
+{
+  "name": "country-language",
+  "version": "1.0.0",
+  "description": "return country language, return boolean response if country national laguage is french, english, deutch",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vic-rider/country-language.git"
+  },
+  "keywords": [
+    "country",
+    "countries",
+    "language",
+    "languages"
+  ],
+  "author": "Vincent A.S TOSSOU (Vic-rider)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vic-rider/country-language/issues"
+  },
+  "homepage": "https://github.com/Vic-rider/country-language#readme"
+}
