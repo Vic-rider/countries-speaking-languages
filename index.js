@@ -7,3 +7,7 @@ exports.hi = function() {
 exports.getCountries = function () {
     return data.countries;
 };
+
+exports.getFrenchCountries = function () {
+    return data.frencheCountries;
+};
