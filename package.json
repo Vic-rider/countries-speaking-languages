@@ -1,5 +1,5 @@
 {
-  "name": "countries-speaking-languages",
+  "name": "speaking-languages",
   "version": "1.0.0",
   "description": "return country language, return boolean response if country national laguage is french, english, deutch",
   "main": "index.js",
@@ -14,7 +14,8 @@
     "country",
     "countries",
     "language",
-    "languages"
+    "languages",
+    "native"
   ],
   "author": "Vincent A.S TOSSOU (Vic-rider)",
   "license": "MIT",
