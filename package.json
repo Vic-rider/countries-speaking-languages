@@ -4,7 +4,8 @@
   "description": "return country language, return boolean response if country national laguage is french, english, deutch",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "prettier:clean": "npx prettier -w *"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Vic-rider/countries-speaking-languages/issues"
   },
-  "homepage": "https://github.com/Vic-rider/countries-speaking-languages#readme"
+  "homepage": "https://github.com/Vic-rider/countries-speaking-languages#readme",
+  "devDependencies": {
+    "prettier": "^2.8.3"
+  }
 }
