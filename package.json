@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "prettier:clean": "npx prettier -w *"
+    "prettier": "npx prettier -w *"
   },
   "repository": {
     "type": "git",
