@@ -1,6 +1,7 @@
 const data = require('./datas.json');
 const filtered_datas = require('./filtered_datas.json'); 
 
+
 exports.getCountryOfficialsLanguages = function (country_code) {
   const country = data.countries[country_code];
   const countryLanguages = {
@@ -13,7 +14,6 @@ exports.getCountryOfficialsLanguages = function (country_code) {
 exports.getCountryAllSpeakingLanguages = function (country_code) {
   return data.countries[country_code].all_speaking_languages;
 };
-
 
 
 // Check if country speak a specific language as Official language
@@ -469,14 +469,6 @@ exports.hasFonAsOfficialLanguage = function (country_code) {
 
 
 
-
-
-
-
-
-
-
-
 // Check if country speak a specific language as local language
 exports.hasEnglishAsSpeakingLanguages = function (country_code) {
 
@@ -504,11 +496,53 @@ exports.hasEnglishAsSpeakingLanguages = function (country_code) {
 };
 
 exports.hasMadarinAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const mandarin_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  mandarin_Countries_speaking_languages;
+  
+  for(let country of mandarin_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+        
+        if(lang.code === 'zh') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasHindiAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const hindi_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  hindi_Countries_speaking_languages;
+  
+  for(let country of hindi_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'hi') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasSpanishAsSpeakingLanguages = function (country_code) {
@@ -562,66 +596,352 @@ exports.hasFrenchAsSpeakingLanguages = function (country_code) {
 };
 
 exports.hasArabicAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const arabic_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  arabic_Countries_speaking_languages;
+  
+  for(let country of arabic_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'ar') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasBengaliAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const bengali_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  bengali_Countries_speaking_languages;
+  
+  for(let country of bengali_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'bn') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasRussianAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const russian_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  russian_Countries_speaking_languages;
+  
+  for(let country of russian_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'ru') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasPortugueseAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const portuguese_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  portuguese_Countries_speaking_languages;
+  
+  for(let country of portuguese_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'pt') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasIndonesianAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const indonesian_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  indonesian_Countries_speaking_languages;
+  
+  for(let country of indonesian_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'id') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasUrduOfficialLanguage = function (country_code) {
-  return data.countries;
+
+  const urdu_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  urdu_Countries_speaking_languages;
+  
+  for(let country of urdu_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'ur') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasJapaneseAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const japanese_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  japanese_Countries_speaking_languages;
+  
+  for(let country of japanese_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'ja') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasGermanAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const german_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  german_Countries_speaking_languages;
+  
+  for(let country of german_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'de') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasJavaneseAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const english_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  javanese_Countries_speaking_languages;
+  
+  for(let country of english_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'jv') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasChineseAsSpeakingLanguages = function (country_code) {
-  return data.countries;
-};
 
-exports.hasTeluguAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+  const chinese_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  chinese_Countries_speaking_languages;
+  
+  for(let country of chinese_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'zh') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasTurkishAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const turkish_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  turkish_Countries_speaking_languages;
+  
+  for(let country of turkish_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'tr') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasKoreanAsSpeakingLanguages = function (country_code) {
-  return data.countries;
-};
 
-exports.hasMarathiAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+  const korean_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  korean_Countries_speaking_languages;
+  
+  for(let country of korean_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'ko') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasYorubaAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const yoruba_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  yoruba_Countries_speaking_languages;
+  
+  for(let country of yoruba_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'yo') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
 exports.hasFonAsSpeakingLanguages = function (country_code) {
-  return data.countries;
+
+  const fon_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  fon_Countries_speaking_languages;
+  
+  for(let country of fon_Countries_speaking_languages) {
+
+    if(country.country_code === country_code) {
+
+      for(let lang of country.all_speaking_languages) {
+  
+        if(lang.code === 'fon') {
+          return true;
+        }
+  
+      }
+
+    }
+
+  }
+
+  return false;
+
 };
 
