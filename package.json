@@ -1,7 +1,7 @@
 {
   "name": "countries-speaking-languages",
-  "version": "1.0.1",
-  "description": "return country language, return boolean response if country national laguage is french, english, deutch",
+  "version": "1.0.2",
+  "description": "Query country information to know if it has specific languages as official language or has specific language as current language",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
