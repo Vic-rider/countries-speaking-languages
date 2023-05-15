@@ -2069,8 +2069,8 @@
       {
         "country_name": "Afghanistan",
         "country_code": "AF",
-        "official_language": "Dari",
-        "official_language_codes": ["prs", "fa-AF"],
+        "official_language": "Pashto, Dari",
+  "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -3684,6 +3684,26 @@
       }
     ],
 
+    "pashto_countries_officials_languages": [
+      {
+        "country_name": "Afghanistan",
+        "country_code": "AF",
+        "official_language": "Pashto, Dari",
+    "official_language_codes": ["ps", "fa"],
+        "all_speaking_languages": [
+          { "language": "Dari", "code": "prs" },
+          { "language": "Pashto", "code": "ps" },
+          { "language": "Turkmen", "code": "tk" },
+          { "language": "Uzbek", "code": "uz-AF" },
+          { "language": "Balochi", "code": "bcc" },
+          { "language": "Pashayi", "code": "pal" },
+          { "language": "Nuristani", "code": "noe" },
+          { "language": "Arabic", "code": "ar" },
+          { "language": "English", "code": "en" }
+        ]
+      }
+    ],
+
     "romansh_countries_officials_languages": [
       {
         "country_name": "Switzerland",
@@ -3818,6 +3838,12 @@
           { "language": "Chinese", "code": "zh" }
         ]
       }
+    ],
+    "yoruba_countries_officials_languages" : [
+
+    ],
+    "fon_countries_officials_languages" : [
+      
     ]
   },
 
@@ -4787,8 +4813,8 @@
       {
         "country_name": "Afghanistan",
         "country_code": "AF",
-        "official_language": "Dari",
-        "official_language_codes": ["prs", "fa-AF"],
+        "official_language": "Pashto, Dari",
+  "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -5902,8 +5928,8 @@
       {
         "country_name": "Afghanistan",
         "country_code": "AF",
-        "official_language": "Dari",
-        "official_language_codes": ["prs", "fa-AF"],
+        "official_language": "Pashto, Dari",
+  "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -7029,8 +7055,8 @@
       {
         "country_name": "Afghanistan",
         "country_code": "AF",
-        "official_language": "Dari",
-        "official_language_codes": ["prs", "fa-AF"],
+        "official_language": "Pashto, Dari",
+  "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -9784,6 +9810,46 @@
       }
     ],
 
+    "fon_Countries_speaking_languages": [
+      {
+        "country_name": "Benin",
+        "country_code": "BJ",
+        "official_language": "French",
+        "official_language_codes": ["fr"],
+        "all_speaking_languages": [
+          { "language": "French", "code": "fr" },
+          { "language": "Yoruba", "code": "yo" },
+          { "language": "Fon", "code": "fon" }
+        ]
+      }
+    ],
+
+    "yoruba_Countries_speaking_languages": [
+      {
+        "country_name": "Benin",
+        "country_code": "BJ",
+        "official_language": "French",
+        "official_language_codes": ["fr"],
+        "all_speaking_languages": [
+          { "language": "French", "code": "fr" },
+          { "language": "Yoruba", "code": "yo" },
+          { "language": "Fon", "code": "fon" }
+        ]
+      },
+      {
+        "country_name": "Nigeria",
+        "country_code": "NG",
+        "official_language": "English",
+        "official_language_codes": ["en"],
+        "all_speaking_languages": [
+          { "language": "English", "code": "en" },
+          { "language": "Hausa", "code": "ha" },
+          { "language": "Igbo", "code": "ig" },
+          { "language": "Yoruba", "code": "yo" }
+        ]
+      }
+    ],
+
     "slovak_Countries_speaking_languages": [
       {
         "country_name": "Austria",
@@ -10160,6 +10226,41 @@
       }
     ],
 
+    "pashto_Countries_speaking_languages": [
+      {
+        "country_name": "Afghanistan",
+        "country_code": "AF",
+        "official_language": "Pashto, Dari",
+    "official_language_codes": ["ps", "fa"],
+        "all_speaking_languages": [
+          { "language": "Dari", "code": "prs" },
+          { "language": "Pashto", "code": "ps" },
+          { "language": "Turkmen", "code": "tk" },
+          { "language": "Uzbek", "code": "uz-AF" },
+          { "language": "Balochi", "code": "bcc" },
+          { "language": "Pashayi", "code": "pal" },
+          { "language": "Nuristani", "code": "noe" },
+          { "language": "Arabic", "code": "ar" },
+          { "language": "English", "code": "en" }
+        ]
+      },
+      {
+        "country_name": "Pakistan",
+        "country_code": "PK",
+        "official_language": "Urdu",
+        "official_language_codes": ["ur"],
+        "all_speaking_languages": [
+          { "language": "Punjabi", "code": "pa" },
+          { "language": "Sindhi", "code": "sd" },
+          { "language": "Siraiki", "code": "skr" },
+          { "language": "Pashto", "code": "ps" },
+          { "language": "Balochi", "code": "bal" },
+          { "language": "Urdu", "code": "ur" },
+          { "language": "English", "code": "en" }
+        ]
+      }
+    ],
+
     "romansh_Countries_speaking_languages": [
       {
         "country_name": "Switzerland",
@@ -10247,8 +10348,8 @@
       {
         "country_name": "Afghanistan",
         "country_code": "AF",
-        "official_language": "Dari",
-        "official_language_codes": ["prs", "fa-AF"],
+        "official_language": "Pashto, Dari",
+  "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },

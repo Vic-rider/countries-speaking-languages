@@ -3,8 +3,8 @@
     "AF": {
       "country_name": "Afghanistan",
       "country_code": "AF",
-      "official_language": "Dari",
-      "official_language_codes": ["prs", "fa-AF"],
+      "official_language": "Pashto, Dari",
+  "official_language_codes": ["ps", "fa"],
       "all_speaking_languages": [
         { "language": "Dari", "code": "prs" },
         { "language": "Pashto", "code": "ps" },
