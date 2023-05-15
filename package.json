@@ -1,6 +1,6 @@
 {
   "name": "countries-speaking-languages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "return country language, return boolean response if country national laguage is french, english, deutch",
   "main": "index.js",
   "scripts": {
