@@ -9442,6 +9442,32 @@
       }
     ],
 
+    "javanese_Countries_speaking_languages": [
+      {
+        "country_name": "Indonesia",
+        "country_code": "ID",
+        "official_language": "Indonesian",
+        "official_language_codes": ["id"],
+        "all_speaking_languages": [
+          { "language": "Indonesian", "code": "id" },
+          { "language": "Javanese", "code": "jv" },
+          { "language": "Sundanese", "code": "su" },
+          { "language": "Madurese", "code": "mad" },
+          { "language": "Minangkabau", "code": "min" },
+          { "language": "Banjar", "code": "bjn" },
+          { "language": "Balinese", "code": "ban" },
+          { "language": "Buginese", "code": "bug" },
+          { "language": "Acehnese", "code": "ace" },
+          { "language": "Batak", "code": "btk" },
+          { "language": "Betawi", "code": "bew" },
+          { "language": "Dayak", "code": "day" },
+          { "language": "Minahasan", "code": "mnh" },
+          { "language": "Papuan languages", "code": "paa" },
+          { "language": "Nias", "code": "nia" }
+        ]
+      }
+    ],
+
     "guaraní_Countries_speaking_languages": [
       {
         "country_name": "Argentina",
@@ -9688,6 +9714,44 @@
     ],
 
     "mandarin_Countries_speaking_languages": [
+      {
+        "country_name": "Australia",
+        "country_code": "AU",
+        "official_language": "English",
+        "official_language_codes": ["en"],
+        "all_speaking_languages": [
+          { "language": "English", "code": "en" },
+          { "language": "Mandarin Chinese", "code": "zh" },
+          { "language": "Italian", "code": "it" },
+          { "language": "Arabic", "code": "ar" },
+          { "language": "Greek", "code": "el" },
+          { "language": "Cantonese", "code": "zh-yue" },
+          { "language": "Vietnamese", "code": "vi" },
+          { "language": "Spanish", "code": "es" },
+          { "language": "Hindi", "code": "hi" },
+          { "language": "Korean", "code": "ko" },
+          { "language": "Filipino", "code": "fil" },
+          { "language": "German", "code": "de" },
+          { "language": "Punjabi", "code": "pa" },
+          { "language": "Persian", "code": "fa" },
+          { "language": "Malayalam", "code": "ml" },
+          { "language": "Tamil", "code": "ta" },
+          { "language": "Indonesian", "code": "id" },
+          { "language": "Bengali", "code": "bn" },
+          { "language": "Polish", "code": "pl" },
+          { "language": "Portuguese", "code": "pt" },
+          { "language": "Gujarati", "code": "gu" },
+          { "language": "Russian", "code": "ru" },
+          { "language": "Japanese", "code": "ja" },
+          { "language": "Sinhalese", "code": "si" },
+          { "language": "French", "code": "fr" },
+          { "language": "Thai", "code": "th" },
+          { "language": "Dutch", "code": "nl" },
+          { "language": "Urdu", "code": "ur" },
+          { "language": "Swedish", "code": "sv" },
+          { "language": "Turkish", "code": "tr" }
+        ]
+      },
       {
         "country_name": "Singapore",
         "country_code": "SG",
