@@ -1,6 +1,9 @@
 const data = require('./datas.json');
-const filtered_datas = require('./filtered_datas.json'); 
 
+
+exports.getCountry = function (country_code) {
+  return data.countries[country_code];
+};
 
 exports.getCountryOfficialsLanguages = function (country_code) {
   const country = data.countries[country_code];
@@ -15,11 +18,44 @@ exports.getCountryAllSpeakingLanguages = function (country_code) {
   return data.countries[country_code].all_speaking_languages;
 };
 
+exports.hasLanguageAsOfficial = function (language_code, country_code) {
+  
+  const country = data.countries[country_code];
+
+  for(let lang of country.official_language_codes) {
+
+    if(lang === language_code) {
+      return true;
+    }
+
+  }
+
+  return false;
+
+};
+
+exports.hasLanguage = function (language_code, country_code) {
+
+  const country = data.countries[country_code];
+
+  for(let lang of country.all_speaking_languages) {
+
+    if(lang.code === language_code) {
+      return true;
+    }
+
+  }
+
+  return false;
+
+};
+
+
 
 // Check if country speak a specific language as Official language
 exports.hasEnglishAsOfficialLanguage = function (country_code) {
   
-  const english_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const english_countries_officials_languages = data.countriesOfficialsLanguages.
   english_countries_officials_languages;
   
   for(let country of english_countries_officials_languages) {
@@ -44,7 +80,7 @@ exports.hasEnglishAsOfficialLanguage = function (country_code) {
 
 exports.hasMadarinAsOfficialLanguage = function (country_code) {
   
-  const mandarin_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const mandarin_countries_officials_languages = data.countriesOfficialsLanguages.
   mandarin_countries_officials_languages;
   
   for(let country of mandarin_countries_officials_languages) {
@@ -69,7 +105,7 @@ exports.hasMadarinAsOfficialLanguage = function (country_code) {
 
 exports.hasHindiAsOfficialLanguage = function (country_code) {
   
-  const hindi_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const hindi_countries_officials_languages = data.countriesOfficialsLanguages.
   hindi_countries_officials_languages;
   
   for(let country of hindi_countries_officials_languages) {
@@ -94,7 +130,7 @@ exports.hasHindiAsOfficialLanguage = function (country_code) {
 
 exports.hasSpanishAsOfficialLanguage = function (country_code) {
   
-  const spanish_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const spanish_countries_officials_languages = data.countriesOfficialsLanguages.
   spanish_countries_officials_languages;
   
   for(let country of spanish_countries_officials_languages) {
@@ -119,7 +155,7 @@ exports.hasSpanishAsOfficialLanguage = function (country_code) {
 
 exports.hasFrenchAsOfficialLanguage = function (country_code) {
   
-  const french_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const french_countries_officials_languages = data.countriesOfficialsLanguages.
   french_countries_officials_languages;
   
   for(let country of french_countries_officials_languages) {
@@ -144,7 +180,7 @@ exports.hasFrenchAsOfficialLanguage = function (country_code) {
 
 exports.hasArabicAsOfficialLanguage = function (country_code) {
   
-  const arabic_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const arabic_countries_officials_languages = data.countriesOfficialsLanguages.
   arabic_countries_officials_languages;
   
   for(let country of arabic_countries_officials_languages) {
@@ -169,7 +205,7 @@ exports.hasArabicAsOfficialLanguage = function (country_code) {
 
 exports.hasBengaliAsOfficialLanguage = function (country_code) {
   
-  const bengali_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const bengali_countries_officials_languages = data.countriesOfficialsLanguages.
   bengali_countries_officials_languages;
   
   for(let country of bengali_countries_officials_languages) {
@@ -194,7 +230,7 @@ exports.hasBengaliAsOfficialLanguage = function (country_code) {
 
 exports.hasRussianAsOfficialLanguage = function (country_code) {
   
-  const russian_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const russian_countries_officials_languages = data.countriesOfficialsLanguages.
   russian_countries_officials_languages;
   
   for(let country of russian_countries_officials_languages) {
@@ -219,7 +255,7 @@ exports.hasRussianAsOfficialLanguage = function (country_code) {
 
 exports.hasPortugueseAsOfficialLanguage = function (country_code) {
   
-  const portuguese_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const portuguese_countries_officials_languages = data.countriesOfficialsLanguages.
   portuguese_countries_officials_languages;
   
   for(let country of portuguese_countries_officials_languages) {
@@ -244,7 +280,7 @@ exports.hasPortugueseAsOfficialLanguage = function (country_code) {
 
 exports.hasIndonesianAsOfficialLanguage = function (country_code) {
   
-  const indonesian_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const indonesian_countries_officials_languages = data.countriesOfficialsLanguages.
   indonesian_countries_officials_languages;
   
   for(let country of indonesian_countries_officials_languages) {
@@ -269,7 +305,7 @@ exports.hasIndonesianAsOfficialLanguage = function (country_code) {
 
 exports.hasUrduOfficiaAslLanguage = function (country_code) {
   
-  const urdu_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const urdu_countries_officials_languages = data.countriesOfficialsLanguages.
   urdu_countries_officials_languages;
   
   for(let country of urdu_countries_officials_languages) {
@@ -294,7 +330,7 @@ exports.hasUrduOfficiaAslLanguage = function (country_code) {
 
 exports.hasJapaneseAsOfficialLanguage = function (country_code) {
   
-  const japanese_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const japanese_countries_officials_languages = data.countriesOfficialsLanguages.
   japanese_countries_officials_languages;
   
   for(let country of japanese_countries_officials_languages) {
@@ -319,7 +355,7 @@ exports.hasJapaneseAsOfficialLanguage = function (country_code) {
 
 exports.hasGermanAsOfficialLanguage = function (country_code) {
   
-  const german_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const german_countries_officials_languages = data.countriesOfficialsLanguages.
   german_countries_officials_languages;
   
   for(let country of german_countries_officials_languages) {
@@ -344,7 +380,7 @@ exports.hasGermanAsOfficialLanguage = function (country_code) {
 
 exports.hasChineseAsOfficialLanguage = function (country_code) {
   
-  const chinese_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const chinese_countries_officials_languages = data.countriesOfficialsLanguages.
   chinese_countries_officials_languages;
   
   for(let country of chinese_countries_officials_languages) {
@@ -369,7 +405,7 @@ exports.hasChineseAsOfficialLanguage = function (country_code) {
 
 exports.hasTurkishAsOfficialLanguage = function (country_code) {
   
-  const turkish_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const turkish_countries_officials_languages = data.countriesOfficialsLanguages.
   turkish_countries_officials_languages;
   
   for(let country of turkish_countries_officials_languages) {
@@ -394,7 +430,7 @@ exports.hasTurkishAsOfficialLanguage = function (country_code) {
 
 exports.hasKoreanAsOfficialLanguage = function (country_code) {
   
-  const korean_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const korean_countries_officials_languages = data.countriesOfficialsLanguages.
   korean_countries_officials_languages;
   
   for(let country of korean_countries_officials_languages) {
@@ -419,7 +455,7 @@ exports.hasKoreanAsOfficialLanguage = function (country_code) {
 
 exports.hasYorubaAsOfficialLanguage = function (country_code) {
   
-  const yoruba_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const yoruba_countries_officials_languages = data.countriesOfficialsLanguages.
   yoruba_countries_officials_languages;
   
   for(let country of yoruba_countries_officials_languages) {
@@ -444,7 +480,7 @@ exports.hasYorubaAsOfficialLanguage = function (country_code) {
 
 exports.hasFonAsOfficialLanguage = function (country_code) {
   
-  const fon_countries_officials_languages = filtered_datas.countriesOfficialsLanguages.
+  const fon_countries_officials_languages = data.countriesOfficialsLanguages.
   fon_countries_officials_languages;
   
   for(let country of fon_countries_officials_languages) {
@@ -472,7 +508,7 @@ exports.hasFonAsOfficialLanguage = function (country_code) {
 // Check if country speak a specific language as local language
 exports.hasEnglishAsSpeakingLanguages = function (country_code) {
 
-  const english_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const english_Countries_speaking_languages = data.countriesSpeakingLanguages.
   english_Countries_speaking_languages;
   
   for(let country of english_Countries_speaking_languages) {
@@ -497,7 +533,7 @@ exports.hasEnglishAsSpeakingLanguages = function (country_code) {
 
 exports.hasMadarinAsSpeakingLanguages = function (country_code) {
 
-  const mandarin_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const mandarin_Countries_speaking_languages = data.countriesSpeakingLanguages.
   mandarin_Countries_speaking_languages;
   
   for(let country of mandarin_Countries_speaking_languages) {
@@ -522,7 +558,7 @@ exports.hasMadarinAsSpeakingLanguages = function (country_code) {
 
 exports.hasHindiAsSpeakingLanguages = function (country_code) {
 
-  const hindi_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const hindi_Countries_speaking_languages = data.countriesSpeakingLanguages.
   hindi_Countries_speaking_languages;
   
   for(let country of hindi_Countries_speaking_languages) {
@@ -547,7 +583,7 @@ exports.hasHindiAsSpeakingLanguages = function (country_code) {
 
 exports.hasSpanishAsSpeakingLanguages = function (country_code) {
 
-  const spanish_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const spanish_Countries_speaking_languages = data.countriesSpeakingLanguages.
   spanish_Countries_speaking_languages;
   
   for(let country of spanish_Countries_speaking_languages) {
@@ -572,7 +608,7 @@ exports.hasSpanishAsSpeakingLanguages = function (country_code) {
 
 exports.hasFrenchAsSpeakingLanguages = function (country_code) {
   
-  const french_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const french_Countries_speaking_languages = data.countriesSpeakingLanguages.
   french_Countries_speaking_languages;
   
   for(let country of french_Countries_speaking_languages) {
@@ -597,7 +633,7 @@ exports.hasFrenchAsSpeakingLanguages = function (country_code) {
 
 exports.hasArabicAsSpeakingLanguages = function (country_code) {
 
-  const arabic_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const arabic_Countries_speaking_languages = data.countriesSpeakingLanguages.
   arabic_Countries_speaking_languages;
   
   for(let country of arabic_Countries_speaking_languages) {
@@ -622,7 +658,7 @@ exports.hasArabicAsSpeakingLanguages = function (country_code) {
 
 exports.hasBengaliAsSpeakingLanguages = function (country_code) {
 
-  const bengali_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const bengali_Countries_speaking_languages = data.countriesSpeakingLanguages.
   bengali_Countries_speaking_languages;
   
   for(let country of bengali_Countries_speaking_languages) {
@@ -647,7 +683,7 @@ exports.hasBengaliAsSpeakingLanguages = function (country_code) {
 
 exports.hasRussianAsSpeakingLanguages = function (country_code) {
 
-  const russian_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const russian_Countries_speaking_languages = data.countriesSpeakingLanguages.
   russian_Countries_speaking_languages;
   
   for(let country of russian_Countries_speaking_languages) {
@@ -672,7 +708,7 @@ exports.hasRussianAsSpeakingLanguages = function (country_code) {
 
 exports.hasPortugueseAsSpeakingLanguages = function (country_code) {
 
-  const portuguese_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const portuguese_Countries_speaking_languages = data.countriesSpeakingLanguages.
   portuguese_Countries_speaking_languages;
   
   for(let country of portuguese_Countries_speaking_languages) {
@@ -697,7 +733,7 @@ exports.hasPortugueseAsSpeakingLanguages = function (country_code) {
 
 exports.hasIndonesianAsSpeakingLanguages = function (country_code) {
 
-  const indonesian_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const indonesian_Countries_speaking_languages = data.countriesSpeakingLanguages.
   indonesian_Countries_speaking_languages;
   
   for(let country of indonesian_Countries_speaking_languages) {
@@ -722,7 +758,7 @@ exports.hasIndonesianAsSpeakingLanguages = function (country_code) {
 
 exports.hasUrduOfficialLanguage = function (country_code) {
 
-  const urdu_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const urdu_Countries_speaking_languages = data.countriesSpeakingLanguages.
   urdu_Countries_speaking_languages;
   
   for(let country of urdu_Countries_speaking_languages) {
@@ -747,7 +783,7 @@ exports.hasUrduOfficialLanguage = function (country_code) {
 
 exports.hasJapaneseAsSpeakingLanguages = function (country_code) {
 
-  const japanese_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const japanese_Countries_speaking_languages = data.countriesSpeakingLanguages.
   japanese_Countries_speaking_languages;
   
   for(let country of japanese_Countries_speaking_languages) {
@@ -772,7 +808,7 @@ exports.hasJapaneseAsSpeakingLanguages = function (country_code) {
 
 exports.hasGermanAsSpeakingLanguages = function (country_code) {
 
-  const german_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const german_Countries_speaking_languages = data.countriesSpeakingLanguages.
   german_Countries_speaking_languages;
   
   for(let country of german_Countries_speaking_languages) {
@@ -797,7 +833,7 @@ exports.hasGermanAsSpeakingLanguages = function (country_code) {
 
 exports.hasJavaneseAsSpeakingLanguages = function (country_code) {
 
-  const english_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const english_Countries_speaking_languages = data.countriesSpeakingLanguages.
   javanese_Countries_speaking_languages;
   
   for(let country of english_Countries_speaking_languages) {
@@ -822,7 +858,7 @@ exports.hasJavaneseAsSpeakingLanguages = function (country_code) {
 
 exports.hasChineseAsSpeakingLanguages = function (country_code) {
 
-  const chinese_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const chinese_Countries_speaking_languages = data.countriesSpeakingLanguages.
   chinese_Countries_speaking_languages;
   
   for(let country of chinese_Countries_speaking_languages) {
@@ -847,7 +883,7 @@ exports.hasChineseAsSpeakingLanguages = function (country_code) {
 
 exports.hasTurkishAsSpeakingLanguages = function (country_code) {
 
-  const turkish_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const turkish_Countries_speaking_languages = data.countriesSpeakingLanguages.
   turkish_Countries_speaking_languages;
   
   for(let country of turkish_Countries_speaking_languages) {
@@ -872,7 +908,7 @@ exports.hasTurkishAsSpeakingLanguages = function (country_code) {
 
 exports.hasKoreanAsSpeakingLanguages = function (country_code) {
 
-  const korean_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const korean_Countries_speaking_languages = data.countriesSpeakingLanguages.
   korean_Countries_speaking_languages;
   
   for(let country of korean_Countries_speaking_languages) {
@@ -897,7 +933,7 @@ exports.hasKoreanAsSpeakingLanguages = function (country_code) {
 
 exports.hasYorubaAsSpeakingLanguages = function (country_code) {
 
-  const yoruba_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const yoruba_Countries_speaking_languages = data.countriesSpeakingLanguages.
   yoruba_Countries_speaking_languages;
   
   for(let country of yoruba_Countries_speaking_languages) {
@@ -922,7 +958,7 @@ exports.hasYorubaAsSpeakingLanguages = function (country_code) {
 
 exports.hasFonAsSpeakingLanguages = function (country_code) {
 
-  const fon_Countries_speaking_languages = filtered_datas.countriesSpeakingLanguages.
+  const fon_Countries_speaking_languages = data.countriesSpeakingLanguages.
   fon_Countries_speaking_languages;
   
   for(let country of fon_Countries_speaking_languages) {

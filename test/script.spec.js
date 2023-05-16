@@ -19,7 +19,47 @@ describe('Get Country Languages Datas', () => {
 
 })
 
-describe('Check if language is spoken in specific countryas Official Language', () => {
+describe('Check if specific language is spoken in specific country as Official Language', () => {
+
+  it('should return false because Japan have not French as Official Language', () => {
+    assert.isFalse(countries_languages.hasLanguageAsOfficial('fr', 'JP'));
+  })
+
+  it('should return true because English is Official Language of Cameroun ', () => {
+    assert.isTrue(countries_languages.hasLanguageAsOfficial('en', 'CM'));
+  })
+
+  it('should return false because Belgium have not Russian as Official Language', () => {
+    assert.isFalse(countries_languages.hasLanguageAsOfficial('ru', 'BE'));
+  })
+
+  it('should return true because Spanish is Official Language of Bolivia ', () => {
+    assert.isTrue(countries_languages.hasLanguageAsOfficial('es', 'BO'));
+  })
+
+})
+
+describe('Check if specific language is spoken in specific country', () => {
+
+  it('should return false because Yoruba is not spoken in Russia', () => {
+      assert.isFalse(countries_languages.hasLanguage('yo' ,'RU'));
+  })
+
+  it('should return true because Hindi is spoken in Australia', () => {
+      assert.isTrue(countries_languages.hasLanguage('hi' ,'AU'));
+  })
+
+  it('should return false because Arabic is not spoken in Canada', () => {
+      assert.isFalse(countries_languages.hasLanguage('ar' ,'CA'));
+  })
+
+  it('should return true because Portuguese is spoken in Angola', () => {
+      assert.isTrue(countries_languages.hasLanguage('pt' ,'AO'));
+  })
+
+})
+
+describe('Check if language is spoken in specific country as Official Language', () => {
 
     it('should return false because this country have not English as Official Language', () => {
       assert.isFalse(countries_languages.hasEnglishAsOfficialLanguage('BJ'));
