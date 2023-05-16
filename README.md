@@ -11,6 +11,7 @@ To include Countries-speaking-languages, require it:
 
 
 You can get country information.
+
 **Ex** : 
 
    ```js 
@@ -20,6 +21,7 @@ You can get country information.
 ```
 
 You can get country officials languages data.
+
 **Ex** : 
    ```js 
    countriesSpeakingLanguages = require('countries-speaking-languages')
@@ -28,6 +30,7 @@ You can get country officials languages data.
 ```
 
 You can get country spoken languages data.
+
 **Ex** : 
    ```js 
    countriesSpeakingLanguages = require('countries-speaking-languages')
@@ -35,6 +38,7 @@ You can get country spoken languages data.
     // returns [ { "language": "French", "code": "fr" }, { "language": "Yoruba", "code": "yo" }, { "language": "Fon", "code": "fon" } ]
 ```
 Check if a specific language is spoken as official language in a specific country
+
 **Ex** : 
  ```js 
    countriesSpeakingLanguages = require('countries-speaking-languages')
@@ -43,6 +47,7 @@ Check if a specific language is spoken as official language in a specific countr
 ```
 
 Check if a specific language is spoken in a specific country
+
 **Ex** : 
  ```js 
    countriesSpeakingLanguages = require('countries-speaking-languages')
@@ -51,6 +56,7 @@ Check if a specific language is spoken in a specific country
 ```
 
 You also have others ways to check if some languages are spoken in a specific country as official languages.
+
 **Ex** : 
  ```js 
    countriesSpeakingLanguages = require('countries-speaking-languages')
@@ -80,6 +86,7 @@ Here is other Official languages checker you can use:
 
 
 Here is the ways to check if some languages are spoken in a specific country.
+
 **Ex** : 
  ```js 
    countriesSpeakingLanguages = require('countries-speaking-languages')
@@ -108,3 +115,6 @@ Here is other languages checker you can use:
  - `hasYorubaAsSpeakingLanguages(country_code)`
  - `hasFonAsSpeakingLanguages(country_code)`
 
+
+## Test
+To test countries-speaking-languages, run `npm test`
