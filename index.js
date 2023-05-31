@@ -996,7 +996,6 @@ module.exports = {
   hasFrenchAsOfficialLanguage,
   hasArabicAsOfficialLanguage,
   hasBengaliAsOfficialLanguage,
-  hasPersianAsOfficialLanguage,
   hasRussianAsOfficialLanguage,
   hasPortugueseAsOfficialLanguage,
   hasIndonesianAsOfficialLanguage,
