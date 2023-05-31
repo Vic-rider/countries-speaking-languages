@@ -1,6 +1,7 @@
 const data = require('./datas.json');
 
 
+
 getCountry = function (country_code) {
   return data.countries[country_code];
 };
@@ -18,7 +19,7 @@ getCountryAllSpeakingLanguages = function (country_code) {
   return data.countries[country_code].all_speaking_languages;
 };
 
-exports.hasLanguageAsOfficial = function (language_code, country_code) {
+hasLanguageAsOfficial = function (language_code, country_code) {
   
   const country = data.countries[country_code];
 
@@ -34,7 +35,7 @@ exports.hasLanguageAsOfficial = function (language_code, country_code) {
 
 };
 
-exports.hasLanguage = function (language_code, country_code) {
+hasLanguage = function (language_code, country_code) {
 
   const country = data.countries[country_code];
 
@@ -50,10 +51,8 @@ exports.hasLanguage = function (language_code, country_code) {
 
 };
 
-
-
 // Check if country speak a specific language as Official language
-exports.hasEnglishAsOfficialLanguage = function (country_code) {
+hasEnglishAsOfficialLanguage = function (country_code) {
   
   const english_countries_officials_languages = data.countriesOfficialsLanguages.
   english_countries_officials_languages;
@@ -78,7 +77,7 @@ exports.hasEnglishAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasMadarinAsOfficialLanguage = function (country_code) {
+hasMadarinAsOfficialLanguage = function (country_code) {
   
   const mandarin_countries_officials_languages = data.countriesOfficialsLanguages.
   mandarin_countries_officials_languages;
@@ -103,7 +102,7 @@ exports.hasMadarinAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasHindiAsOfficialLanguage = function (country_code) {
+hasHindiAsOfficialLanguage = function (country_code) {
   
   const hindi_countries_officials_languages = data.countriesOfficialsLanguages.
   hindi_countries_officials_languages;
@@ -128,7 +127,7 @@ exports.hasHindiAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasSpanishAsOfficialLanguage = function (country_code) {
+hasSpanishAsOfficialLanguage = function (country_code) {
   
   const spanish_countries_officials_languages = data.countriesOfficialsLanguages.
   spanish_countries_officials_languages;
@@ -153,7 +152,7 @@ exports.hasSpanishAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasFrenchAsOfficialLanguage = function (country_code) {
+hasFrenchAsOfficialLanguage = function (country_code) {
   
   const french_countries_officials_languages = data.countriesOfficialsLanguages.
   french_countries_officials_languages;
@@ -178,7 +177,7 @@ exports.hasFrenchAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasArabicAsOfficialLanguage = function (country_code) {
+hasArabicAsOfficialLanguage = function (country_code) {
   
   const arabic_countries_officials_languages = data.countriesOfficialsLanguages.
   arabic_countries_officials_languages;
@@ -203,7 +202,7 @@ exports.hasArabicAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasBengaliAsOfficialLanguage = function (country_code) {
+hasBengaliAsOfficialLanguage = function (country_code) {
   
   const bengali_countries_officials_languages = data.countriesOfficialsLanguages.
   bengali_countries_officials_languages;
@@ -228,7 +227,7 @@ exports.hasBengaliAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasRussianAsOfficialLanguage = function (country_code) {
+hasRussianAsOfficialLanguage = function (country_code) {
   
   const russian_countries_officials_languages = data.countriesOfficialsLanguages.
   russian_countries_officials_languages;
@@ -253,7 +252,7 @@ exports.hasRussianAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasPortugueseAsOfficialLanguage = function (country_code) {
+hasPortugueseAsOfficialLanguage = function (country_code) {
   
   const portuguese_countries_officials_languages = data.countriesOfficialsLanguages.
   portuguese_countries_officials_languages;
@@ -278,7 +277,7 @@ exports.hasPortugueseAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasIndonesianAsOfficialLanguage = function (country_code) {
+hasIndonesianAsOfficialLanguage = function (country_code) {
   
   const indonesian_countries_officials_languages = data.countriesOfficialsLanguages.
   indonesian_countries_officials_languages;
@@ -303,7 +302,7 @@ exports.hasIndonesianAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasUrduOfficiaAslLanguage = function (country_code) {
+hasUrduAsOfficiaAslLanguage = function (country_code) {
   
   const urdu_countries_officials_languages = data.countriesOfficialsLanguages.
   urdu_countries_officials_languages;
@@ -328,7 +327,7 @@ exports.hasUrduOfficiaAslLanguage = function (country_code) {
 
 };
 
-exports.hasJapaneseAsOfficialLanguage = function (country_code) {
+hasJapaneseAsOfficialLanguage = function (country_code) {
   
   const japanese_countries_officials_languages = data.countriesOfficialsLanguages.
   japanese_countries_officials_languages;
@@ -353,7 +352,7 @@ exports.hasJapaneseAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasGermanAsOfficialLanguage = function (country_code) {
+hasGermanAsOfficialLanguage = function (country_code) {
   
   const german_countries_officials_languages = data.countriesOfficialsLanguages.
   german_countries_officials_languages;
@@ -378,7 +377,7 @@ exports.hasGermanAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasChineseAsOfficialLanguage = function (country_code) {
+hasChineseAsOfficialLanguage = function (country_code) {
   
   const chinese_countries_officials_languages = data.countriesOfficialsLanguages.
   chinese_countries_officials_languages;
@@ -403,7 +402,7 @@ exports.hasChineseAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasTurkishAsOfficialLanguage = function (country_code) {
+hasTurkishAsOfficialLanguage = function (country_code) {
   
   const turkish_countries_officials_languages = data.countriesOfficialsLanguages.
   turkish_countries_officials_languages;
@@ -428,7 +427,7 @@ exports.hasTurkishAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasKoreanAsOfficialLanguage = function (country_code) {
+hasKoreanAsOfficialLanguage = function (country_code) {
   
   const korean_countries_officials_languages = data.countriesOfficialsLanguages.
   korean_countries_officials_languages;
@@ -453,7 +452,7 @@ exports.hasKoreanAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasYorubaAsOfficialLanguage = function (country_code) {
+hasYorubaAsOfficialLanguage = function (country_code) {
   
   const yoruba_countries_officials_languages = data.countriesOfficialsLanguages.
   yoruba_countries_officials_languages;
@@ -478,7 +477,7 @@ exports.hasYorubaAsOfficialLanguage = function (country_code) {
 
 };
 
-exports.hasFonAsOfficialLanguage = function (country_code) {
+hasFonAsOfficialLanguage = function (country_code) {
   
   const fon_countries_officials_languages = data.countriesOfficialsLanguages.
   fon_countries_officials_languages;
@@ -506,7 +505,7 @@ exports.hasFonAsOfficialLanguage = function (country_code) {
 
 
 // Check if country speak a specific language as local language
-exports.hasEnglishAsSpeakingLanguages = function (country_code) {
+hasEnglishAsSpeakingLanguages = function (country_code) {
 
   const english_Countries_speaking_languages = data.countriesSpeakingLanguages.
   english_Countries_speaking_languages;
@@ -531,7 +530,7 @@ exports.hasEnglishAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasMadarinAsSpeakingLanguages = function (country_code) {
+hasMadarinAsSpeakingLanguages = function (country_code) {
 
   const mandarin_Countries_speaking_languages = data.countriesSpeakingLanguages.
   mandarin_Countries_speaking_languages;
@@ -556,7 +555,7 @@ exports.hasMadarinAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasHindiAsSpeakingLanguages = function (country_code) {
+hasHindiAsSpeakingLanguages = function (country_code) {
 
   const hindi_Countries_speaking_languages = data.countriesSpeakingLanguages.
   hindi_Countries_speaking_languages;
@@ -581,7 +580,7 @@ exports.hasHindiAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasSpanishAsSpeakingLanguages = function (country_code) {
+hasSpanishAsSpeakingLanguages = function (country_code) {
 
   const spanish_Countries_speaking_languages = data.countriesSpeakingLanguages.
   spanish_Countries_speaking_languages;
@@ -606,7 +605,7 @@ exports.hasSpanishAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasFrenchAsSpeakingLanguages = function (country_code) {
+hasFrenchAsSpeakingLanguages = function (country_code) {
   
   const french_Countries_speaking_languages = data.countriesSpeakingLanguages.
   french_Countries_speaking_languages;
@@ -631,7 +630,7 @@ exports.hasFrenchAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasArabicAsSpeakingLanguages = function (country_code) {
+hasArabicAsSpeakingLanguages = function (country_code) {
 
   const arabic_Countries_speaking_languages = data.countriesSpeakingLanguages.
   arabic_Countries_speaking_languages;
@@ -656,7 +655,7 @@ exports.hasArabicAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasBengaliAsSpeakingLanguages = function (country_code) {
+hasBengaliAsSpeakingLanguages = function (country_code) {
 
   const bengali_Countries_speaking_languages = data.countriesSpeakingLanguages.
   bengali_Countries_speaking_languages;
@@ -681,7 +680,7 @@ exports.hasBengaliAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasRussianAsSpeakingLanguages = function (country_code) {
+hasRussianAsSpeakingLanguages = function (country_code) {
 
   const russian_Countries_speaking_languages = data.countriesSpeakingLanguages.
   russian_Countries_speaking_languages;
@@ -706,7 +705,7 @@ exports.hasRussianAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasPortugueseAsSpeakingLanguages = function (country_code) {
+hasPortugueseAsSpeakingLanguages = function (country_code) {
 
   const portuguese_Countries_speaking_languages = data.countriesSpeakingLanguages.
   portuguese_Countries_speaking_languages;
@@ -731,7 +730,7 @@ exports.hasPortugueseAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasIndonesianAsSpeakingLanguages = function (country_code) {
+hasIndonesianAsSpeakingLanguages = function (country_code) {
 
   const indonesian_Countries_speaking_languages = data.countriesSpeakingLanguages.
   indonesian_Countries_speaking_languages;
@@ -756,7 +755,7 @@ exports.hasIndonesianAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasUrduSpeakingLanguage = function (country_code) {
+hasUrduSpeakingLanguage = function (country_code) {
 
   const urdu_Countries_speaking_languages = data.countriesSpeakingLanguages.
   urdu_Countries_speaking_languages;
@@ -781,7 +780,7 @@ exports.hasUrduSpeakingLanguage = function (country_code) {
 
 };
 
-exports.hasJapaneseAsSpeakingLanguages = function (country_code) {
+hasJapaneseAsSpeakingLanguages = function (country_code) {
 
   const japanese_Countries_speaking_languages = data.countriesSpeakingLanguages.
   japanese_Countries_speaking_languages;
@@ -806,7 +805,7 @@ exports.hasJapaneseAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasGermanAsSpeakingLanguages = function (country_code) {
+hasGermanAsSpeakingLanguages = function (country_code) {
 
   const german_Countries_speaking_languages = data.countriesSpeakingLanguages.
   german_Countries_speaking_languages;
@@ -831,7 +830,7 @@ exports.hasGermanAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasJavaneseAsSpeakingLanguages = function (country_code) {
+hasJavaneseAsSpeakingLanguages = function (country_code) {
 
   const english_Countries_speaking_languages = data.countriesSpeakingLanguages.
   javanese_Countries_speaking_languages;
@@ -856,7 +855,7 @@ exports.hasJavaneseAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasChineseAsSpeakingLanguages = function (country_code) {
+hasChineseAsSpeakingLanguages = function (country_code) {
 
   const chinese_Countries_speaking_languages = data.countriesSpeakingLanguages.
   chinese_Countries_speaking_languages;
@@ -881,7 +880,7 @@ exports.hasChineseAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasTurkishAsSpeakingLanguages = function (country_code) {
+hasTurkishAsSpeakingLanguages = function (country_code) {
 
   const turkish_Countries_speaking_languages = data.countriesSpeakingLanguages.
   turkish_Countries_speaking_languages;
@@ -906,7 +905,7 @@ exports.hasTurkishAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasKoreanAsSpeakingLanguages = function (country_code) {
+hasKoreanAsSpeakingLanguages = function (country_code) {
 
   const korean_Countries_speaking_languages = data.countriesSpeakingLanguages.
   korean_Countries_speaking_languages;
@@ -931,7 +930,7 @@ exports.hasKoreanAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasYorubaAsSpeakingLanguages = function (country_code) {
+hasYorubaAsSpeakingLanguages = function (country_code) {
 
   const yoruba_Countries_speaking_languages = data.countriesSpeakingLanguages.
   yoruba_Countries_speaking_languages;
@@ -956,7 +955,7 @@ exports.hasYorubaAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasFonAsSpeakingLanguages = function (country_code) {
+hasFonAsSpeakingLanguages = function (country_code) {
 
   const fon_Countries_speaking_languages = data.countriesSpeakingLanguages.
   fon_Countries_speaking_languages;
@@ -981,9 +980,52 @@ exports.hasFonAsSpeakingLanguages = function (country_code) {
 
 };
 
+
+
 module.exports = {
   getCountry,
   getCountryOfficialsLanguages,
   getCountryAllSpeakingLanguages,
-};
+  hasLanguageAsOfficial,
+  hasLanguage,
 
+  hasEnglishAsOfficialLanguage,
+  hasMadarinAsOfficialLanguage,
+  hasHindiAsOfficialLanguage,
+  hasSpanishAsOfficialLanguage,
+  hasFrenchAsOfficialLanguage,
+  hasArabicAsOfficialLanguage,
+  hasBengaliAsOfficialLanguage,
+  hasPersianAsOfficialLanguage,
+  hasRussianAsOfficialLanguage,
+  hasPortugueseAsOfficialLanguage,
+  hasIndonesianAsOfficialLanguage,
+  hasUrduAsOfficiaAslLanguage,
+  hasJapaneseAsOfficialLanguage,
+  hasGermanAsOfficialLanguage,
+  hasChineseAsOfficialLanguage,
+  hasTurkishAsOfficialLanguage,
+  hasKoreanAsOfficialLanguage,
+  hasYorubaAsOfficialLanguage,
+  hasFonAsOfficialLanguage,
+
+  hasEnglishAsSpeakingLanguages,
+  hasMadarinAsSpeakingLanguages,
+  hasHindiAsSpeakingLanguages,
+  hasSpanishAsSpeakingLanguages,
+  hasFrenchAsSpeakingLanguages,
+  hasArabicAsSpeakingLanguages,
+  hasBengaliAsSpeakingLanguages,
+  hasRussianAsSpeakingLanguages,
+  hasPortugueseAsSpeakingLanguages,
+  hasIndonesianAsSpeakingLanguages,
+  hasUrduSpeakingLanguage,
+  hasJapaneseAsSpeakingLanguages,
+  hasGermanAsSpeakingLanguages,
+  hasJavaneseAsSpeakingLanguages,
+  hasChineseAsSpeakingLanguages,
+  hasTurkishAsSpeakingLanguages,
+  hasKoreanAsSpeakingLanguages,
+  hasYorubaAsSpeakingLanguages,
+  hasFonAsSpeakingLanguages
+};
