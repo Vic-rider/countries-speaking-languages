@@ -1,11 +1,11 @@
 const data = require('./datas.json');
 
 
-exports.getCountry = function (country_code) {
+getCountry = function (country_code) {
   return data.countries[country_code];
 };
 
-exports.getCountryOfficialsLanguages = function (country_code) {
+getCountryOfficialsLanguages = function (country_code) {
   const country = data.countries[country_code];
   const countryLanguages = {
     'languages' : country.official_language,
@@ -14,7 +14,7 @@ exports.getCountryOfficialsLanguages = function (country_code) {
   return countryLanguages;
 };
 
-exports.getCountryAllSpeakingLanguages = function (country_code) {
+getCountryAllSpeakingLanguages = function (country_code) {
   return data.countries[country_code].all_speaking_languages;
 };
 
@@ -756,7 +756,7 @@ exports.hasIndonesianAsSpeakingLanguages = function (country_code) {
 
 };
 
-exports.hasUrduOfficialLanguage = function (country_code) {
+exports.hasUrduSpeakingLanguage = function (country_code) {
 
   const urdu_Countries_speaking_languages = data.countriesSpeakingLanguages.
   urdu_Countries_speaking_languages;
@@ -979,5 +979,11 @@ exports.hasFonAsSpeakingLanguages = function (country_code) {
 
   return false;
 
+};
+
+module.exports = {
+  getCountry,
+  getCountryOfficialsLanguages,
+  getCountryAllSpeakingLanguages,
 };
 
