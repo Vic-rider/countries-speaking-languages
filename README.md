@@ -1,6 +1,6 @@
 #### Made by  [@Vic-rider](https://twitter.com/tossouvincenta1)
 
-**countries-speaking-languages**, query country information to know if a language is speaking in this country as **`official language`** or a **`spoken language`**.
+**countries-speaking-languages**, query country information to know if a language is speaking in this country as **`official language`** or a **`native language`**.
 
 ## Install
 Install using `npm install countries-speaking-languages`
@@ -105,7 +105,7 @@ Here is other languages checker you can use:
  - `hasRussianAsSpeakingLanguages(country_code)`
  - `hasPortugueseAsSpeakingLanguages(country_code)`
  - `hasIndonesianAsSpeakingLanguages(country_code)`
- - `hasUrduOfficialLanguage(country_code)`
+ - `hasUrduSpeakingLanguage(country_code)`
  - `hasJapaneseAsSpeakingLanguages(country_code)`
  - `hasGermanAsSpeakingLanguages(country_code)`
  - `hasJavaneseAsSpeakingLanguages(country_code)`

@@ -1,6 +1,6 @@
-// const countries_languages = require('countries-speaking-languages')
+const countries_languages = require('countries-speaking-languages')
 const { describe } = require('mocha');
-const countries_languages = require('../index.js');
+// const countries_languages = require('../index.js');
 const { assert } = require('chai');
 
 describe('Get Country Languages Datas', () => {
@@ -142,11 +142,11 @@ describe('Check if language is spoken in specific country as Official Language',
     })
     
     it('should return false because this country have not Urdu as Official Language', () => {
-      assert.isFalse(countries_languages.hasUrduOfficiaAslLanguage('BJ'));
+      assert.isFalse(countries_languages.hasUrduAsOfficiaAslLanguage('BJ'));
     })
     
     it('should return true because Urdu is it\'s Official Language', () => {
-      assert.isTrue(countries_languages.hasUrduOfficiaAslLanguage('PK'));
+      assert.isTrue(countries_languages.hasUrduAsOfficiaAslLanguage('PK'));
     })
     
     it('should return false because this country have not Japanese as Official Language', () => {
