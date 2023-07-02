@@ -1,11 +1,10 @@
 {
-  
   "countries": {
     "AF": {
       "country_name": "Afghanistan",
       "country_code": "AF",
       "official_language": "Pashto, Dari",
-  "official_language_codes": ["ps", "fa"],
+      "official_language_codes": ["ps", "fa"],
       "all_speaking_languages": [
         { "language": "Dari", "code": "prs" },
         { "language": "Pashto", "code": "ps" },
@@ -2822,7 +2821,6 @@
   },
 
   "countriesOfficialsLanguages": {
-    
     "french_countries_officials_languages": [
       {
         "country_name": "Benin",
@@ -4892,7 +4890,7 @@
         "country_name": "Afghanistan",
         "country_code": "AF",
         "official_language": "Pashto, Dari",
-  "official_language_codes": ["ps", "fa"],
+        "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -6511,7 +6509,7 @@
         "country_name": "Afghanistan",
         "country_code": "AF",
         "official_language": "Pashto, Dari",
-    "official_language_codes": ["ps", "fa"],
+        "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -6661,12 +6659,8 @@
         ]
       }
     ],
-    "yoruba_countries_officials_languages" : [
-
-    ],
-    "fon_countries_officials_languages" : [
-      
-    ]
+    "yoruba_countries_officials_languages": [],
+    "fon_countries_officials_languages": []
   },
 
   "countriesSpeakingLanguages": {
@@ -7636,7 +7630,7 @@
         "country_name": "Afghanistan",
         "country_code": "AF",
         "official_language": "Pashto, Dari",
-  "official_language_codes": ["ps", "fa"],
+        "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -8751,7 +8745,7 @@
         "country_name": "Afghanistan",
         "country_code": "AF",
         "official_language": "Pashto, Dari",
-  "official_language_codes": ["ps", "fa"],
+        "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -9878,7 +9872,7 @@
         "country_name": "Afghanistan",
         "country_code": "AF",
         "official_language": "Pashto, Dari",
-  "official_language_codes": ["ps", "fa"],
+        "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -13117,7 +13111,7 @@
         "country_name": "Afghanistan",
         "country_code": "AF",
         "official_language": "Pashto, Dari",
-    "official_language_codes": ["ps", "fa"],
+        "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -13235,7 +13229,7 @@
         "country_name": "Afghanistan",
         "country_code": "AF",
         "official_language": "Pashto, Dari",
-  "official_language_codes": ["ps", "fa"],
+        "official_language_codes": ["ps", "fa"],
         "all_speaking_languages": [
           { "language": "Dari", "code": "prs" },
           { "language": "Pashto", "code": "ps" },
@@ -13367,5 +13361,4 @@
       }
     ]
   }
-
 }
