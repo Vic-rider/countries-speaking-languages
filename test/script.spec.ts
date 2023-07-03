@@ -1,6 +1,5 @@
-const { describe } = require('mocha');
-const { assert } = require('chai');
-const { CountriesSpeakingLanguage } = require('countries-speaking-languages');
+
+import { CountriesSpeakingLanguage } from "countries-speaking-languages";
 
 const _countriesSpeakingLanguage = new CountriesSpeakingLanguage();
 

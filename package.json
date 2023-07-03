@@ -1,11 +1,12 @@
 {
   "name": "countries-speaking-languages",
-  "version": "1.1.4",
+  "version": "1.2.1",
   "description": "Query country information to know if it has specific languages as official language or has specific language as current language",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha",
-    "prettier": "npx prettier -w *"
+    "test": "jest",
+    "prettier": "npx prettier -w *",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,11 +26,9 @@
   },
   "homepage": "https://github.com/Vic-rider/countries-speaking-languages#readme",
   "devDependencies": {
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "prettier": "^2.8.3"
-  },
-  "dependencies": {
-    "countries-speaking-languages": "^1.1.4"
+    "@types/jest": "^29.5.2",
+    "prettier": "^2.8.3",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.3"
   }
 }
