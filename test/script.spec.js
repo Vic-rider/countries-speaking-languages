@@ -1,7 +1,6 @@
-// const _countries_languages = require('countries-speaking-languages')
 const { describe } = require('mocha');
 const { assert } = require('chai');
-const { CountriesSpeakingLanguage } = require('../lib');
+const { CountriesSpeakingLanguage } = require('countries-speaking-languages');
 
 const _countriesSpeakingLanguage = new CountriesSpeakingLanguage();
 

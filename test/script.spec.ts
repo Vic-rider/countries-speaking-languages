@@ -1,5 +1,5 @@
 
-import { CountriesSpeakingLanguage } from "../lib";
+import { CountriesSpeakingLanguage } from "countries-speaking-languages";
 
 const _countriesSpeakingLanguage = new CountriesSpeakingLanguage();
 

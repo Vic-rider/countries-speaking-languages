@@ -9,13 +9,28 @@ Install using `npm install countries-speaking-languages`
 ## Usage
 
 To include Countries-speaking-languages, require it:
+ // in JavaScript
+```js
+CountriesSpeakingLanguage = require('countries-speaking-languages');
+```
+
+ // in TypeScript
+```ts
+import { CountriesSpeakingLanguage } from "countries-speaking-languages";
+```
+
+### Create an instance of it
+
+```js
+const _countriesSpeakingLanguage = new CountriesSpeakingLanguage();
+```
+
 
 You can get country information.
 
 **Ex** :
 
 ```js
-countriesSpeakingLanguages = require('countries-speaking-languages');
 countriesSpeakingLanguages.getCountry('country_code');
 // returns country_datas [object]
 ```
@@ -25,7 +40,6 @@ You can get country officials languages data.
 **Ex** :
 
 ```js
-countriesSpeakingLanguages = require('countries-speaking-languages');
 countriesSpeakingLanguages.getCountryOfficialsLanguages('BJ'); // "BJ" as `country_code`
 // returns { 'languages' : ['French'], 'languages_codes': ['fr'] }
 ```
@@ -35,7 +49,6 @@ You can get country spoken languages data.
 **Ex** :
 
 ```js
-countriesSpeakingLanguages = require('countries-speaking-languages');
 countriesSpeakingLanguages.getCountryAllSpeakingLanguages('BJ'); // "BJ" as `country_code`
 // returns [ { "language": "French", "code": "fr" }, { "language": "Yoruba", "code": "yo" }, { "language": "Fon", "code": "fon" } ]
 ```
@@ -45,7 +58,6 @@ Check if a specific language is spoken as official language in a specific countr
 **Ex** :
 
 ```js
-countriesSpeakingLanguages = require('countries-speaking-languages');
 countriesSpeakingLanguages.hasLanguageAsOfficial('fr', 'JP'); // "JP" as `country_code` and 'fr' as `language_code`
 // returns false    : french is not an official language of Japan
 ```
@@ -55,7 +67,6 @@ Check if a specific language is spoken in a specific country
 **Ex** :
 
 ```js
-countriesSpeakingLanguages = require('countries-speaking-languages');
 countriesSpeakingLanguages.hasLanguage('pt', 'AO'); // "AO" as `country_code` and 'pt' as `language_code`
 // returns true  : portuguese is spoken in Angola
 ```
@@ -65,7 +76,6 @@ You also have others ways to check if some languages are spoken in a specific co
 **Ex** :
 
 ```js
-countriesSpeakingLanguages = require('countries-speaking-languages');
 countriesSpeakingLanguages.hasEnglishAsOfficialLanguage('AO'); // "AO" as `country_code` `
 // returns false  : english is not spoken in Angola as official language
 ```
@@ -95,7 +105,6 @@ Here is the ways to check if some languages are spoken in a specific country.
 **Ex** :
 
 ```js
-countriesSpeakingLanguages = require('countries-speaking-languages');
 countriesSpeakingLanguages.hasEnglishAsSpeakingLanguages('GH'); // "GH" as `country_code` `
 // returns true  : english is spoken in Ghana
 ```
