@@ -8,13 +8,14 @@ Install using `npm install countries-speaking-languages`
 
 ## Usage
 
-To include Countries-speaking-languages, require it:
- // in JavaScript
+To include Countries-speaking-languages, require or import it:
+
+in JavaScript
 ```js
 CountriesSpeakingLanguage = require('countries-speaking-languages');
 ```
 
- // in TypeScript
+in TypeScript
 ```ts
 import { CountriesSpeakingLanguage } from "countries-speaking-languages";
 ```
@@ -22,7 +23,7 @@ import { CountriesSpeakingLanguage } from "countries-speaking-languages";
 ### Create an instance of it
 
 ```js
-const _countriesSpeakingLanguage = new CountriesSpeakingLanguage();
+const countriesSpeakingLanguages = new CountriesSpeakingLanguage();
 ```
 
 
