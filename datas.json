@@ -2366,7 +2366,7 @@
       "official_language": "Spanish",
       "official_language_codes": ["spa"],
       "all_speaking_languages": [
-        { "language": "Spanish", "code": "spa" },
+        { "language": "Spanish", "code": "es" },
         { "language": "Catalan", "code": "cat" },
         { "language": "Galician", "code": "glg" },
         { "language": "Basque", "code": "eus" }
@@ -4626,7 +4626,7 @@
         "official_language": "Spanish",
         "official_language_codes": ["spa"],
         "all_speaking_languages": [
-          { "language": "Spanish", "code": "spa" },
+          { "language": "Spanish", "code": "es" },
           { "language": "Catalan", "code": "cat" },
           { "language": "Galician", "code": "glg" },
           { "language": "Basque", "code": "eus" }
@@ -9357,7 +9357,7 @@
         "official_language": "Spanish",
         "official_language_codes": ["spa"],
         "all_speaking_languages": [
-          { "language": "Spanish", "code": "spa" },
+          { "language": "Spanish", "code": "es" },
           { "language": "Catalan", "code": "cat" },
           { "language": "Galician", "code": "glg" },
           { "language": "Basque", "code": "eus" }
